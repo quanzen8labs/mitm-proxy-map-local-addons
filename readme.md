@@ -20,7 +20,7 @@ Easy map local for request with [mitmproxy](https://mitmproxy.org/)
 2. Clone this repository:
 
    ```shell
-   git clone https://github.com/yourusername/your-mitmproxy-addons.git
+   git clone https://github.com/quanzen8labs/mitm-proxy-map-local-addons.git
    ```
 
 ## Using
