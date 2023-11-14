@@ -1,0 +1,7 @@
+[
+  {
+    "method": "GET",
+    "url": "https://api.example",
+    "local_file": "example.json"
+  }
+]
