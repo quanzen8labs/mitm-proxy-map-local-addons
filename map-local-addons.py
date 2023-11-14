@@ -1,13 +1,16 @@
 """Map Local addons"""
 
 import json
+from pickle import TRUE
 from mitmproxy import http
 import logging
+
+from urllib.parse import urlparse, urljoin
+from urllib.parse import parse_qs
 
 from mitmproxy.addonmanager import Loader
 from mitmproxy.log import ALERT
 logger = logging.getLogger(__name__)
-
 
 class MapLocalConfig:
     def __init__(self, url, method, mapLocalFile):
@@ -22,7 +25,7 @@ class QuanMapLocal:
     def request(self, flow: http.HTTPFlow):
         self.loadConfigs()
         for config in self.mapLocalConfigs:
-            if config.url == flow.request.pretty_url and config.method == flow.request.method and config.mapLocalFile is not None:
+            if self.isSameURL(config.url, flow.request.pretty_url) == True and config.method == flow.request.method and config.mapLocalFile is not None:
                 fp= open("local-files/{0}".format(config.mapLocalFile), "r")
                 data = fp.read()
                 fp.close()
@@ -42,5 +45,35 @@ class QuanMapLocal:
         fp.close()
 
         self.mapLocalConfigs = mapLocalConfigs
+
+    def isSameURL(self, lhs, rhs) -> bool:
+        parsed_lhs = urlparse(lhs)
+        lhsQueryParams = parse_qs(parsed_lhs.query)
+        parsed_rhs = urlparse(rhs)
+        rhsQueryParams = parse_qs(parsed_rhs.query)
+
+        lshURL = urljoin(lhs, parsed_lhs.path)
+        rshURL = urljoin(lhs, parsed_rhs.path)
+
+        lhsKeys = list(lhsQueryParams.keys())
+        rhsKeys = list(rhsQueryParams.keys())
+
+        if lshURL != rshURL:
+            return False
+        
+        if len(lhsKeys) != len(rhsKeys):
+            return False
+        
+        for key in lhsKeys:
+            if lhsQueryParams[key] != rhsQueryParams[key]:
+                return False
+            
+        for key in rhsKeys:
+            if lhsQueryParams[key] != rhsQueryParams[key]:
+                return False
+            
+        return True
+        
+
 
 addons = [QuanMapLocal()]
