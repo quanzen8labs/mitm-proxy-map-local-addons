@@ -1,0 +1,44 @@
+{
+    "createdAt": "2022-11-08T13:17:20+09:00",
+    "createdPgmId": "API250101",
+    "debtBalance": -719,
+    "debtBalanceTotal": 700,
+    "extTargetAmt": -719,
+    "intTargetAmt": 20,
+    "interest": 20,
+    "monthlyDeptList": [],
+    "monthlyNormalBillingList": [],
+    "monthlyOdBillingList": [],
+    "repaymentStatusList": [
+        {
+            "repaymentStatusID": "005",
+            "repaymentStatusName": "任意整理"
+        },
+        {
+            "repaymentStatusID": "014",
+            "repaymentStatusName": "口座振替未登録利用停止"
+        },
+        {
+            "repaymentStatusID": "002",
+            "repaymentStatusName": "遅延"
+        },
+        {
+            "repaymentStatusID": "004",
+            "repaymentStatusName": "社内督促"
+        },
+        {
+            "repaymentStatusID": "006",
+            "repaymentStatusName": "自己破産"
+        }
+    ],
+    "stopBillingFlg": "1",
+    "stopCalcInterestFlg": "0",
+    "stopCalcLateChargeFlg": "0",
+    "stopChangeStatusAccelerationFlg": "0",
+    "totalBilling": 300,
+    "totalLateCharge": 200,
+    "totalNormalBilling": 200,
+    "totalOdBilling": 100,
+    "updatedAt": "2023-09-19T16:08:03+09:00",
+    "updatedPgmId": "API250101"
+}

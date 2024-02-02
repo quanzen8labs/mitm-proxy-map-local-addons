@@ -1,0 +1,177 @@
+{
+    "blockchain_wallets": [
+        {
+            "address": "0x62c35b8DE5A15Db45dc18A7429aeb254051CA738",
+            "chain_name": "polygon"
+        }
+    ],
+    "cardInfo": [
+        {
+            "backDesignWithoutNumber": "https://contents.dev.nudge-platform.com/club/2000000/physical-card/4000003/img-a56e20ae-ab88-411c-a6d5-2209da1f04dc.png",
+            "cardID": "91d67f93-42bc-4a34-933e-59d56f7ff5fd",
+            "cardStatus01": "0",
+            "cardStatus02": "0",
+            "cardStatus03": "0",
+            "cardStatus04": "0",
+            "cardStatus05": "0",
+            "cardStatus06": "0",
+            "cardStatus07": "0",
+            "cardStatus08": "0",
+            "cardStatus09": "0",
+            "cardStatus10": "0",
+            "cardStatus11": "0",
+            "cardStatus12": "0",
+            "cardStatus13": "0",
+            "cardStatus14": "0",
+            "cardStatus15": "0",
+            "clubID": 2000760,
+            "clubInfo": [
+                {
+                    "coverImageUrl": "https://contents.dev.nudge-platform.com/club/2000760/cover/img-f0bf1796-fb73-4ba1-b22a-272b3482f78d.png",
+                    "memberImageUrl": "https://contents.dev.nudge-platform.com/club/2000760/card/img-20e11d88-6db3-48c4-8b45-bebd37a50b84.png",
+                    "memberNum": 3,
+                    "themeColor": "#4FD6DC"
+                }
+            ],
+            "designID": 4000003,
+            "designImageUrl": "https://contents.dev.nudge-platform.com/club/2000000/physical-card/4000003/img-c5abf70e-5841-4e15-a8ba-d2a42e6c4e0d.png",
+            "frontDesignWithoutNumber": "https://contents.dev.nudge-platform.com/club/2000000/physical-card/4000003/img-00c593db-166e-4091-870c-dbbd312a5219.png",
+            "physicalCardIssuanceHistoryList": [
+                {
+                    "activatedFlg": 1,
+                    "cardExpirationMonth": "",
+                    "cardReceiptDatetime": "2023-11-22 13:06:12",
+                    "firstIssueFlg": 0,
+                    "registeredMailNum": "32378592433",
+                    "reissueFlg": 1
+                },
+                {
+                    "activatedFlg": 1,
+                    "cardExpirationMonth": "",
+                    "cardReceiptDatetime": "",
+                    "firstIssueFlg": 0,
+                    "registeredMailNum": "",
+                    "reissueFlg": 1
+                },
+                {
+                    "activatedFlg": 1,
+                    "cardExpirationMonth": "",
+                    "cardReceiptDatetime": "",
+                    "firstIssueFlg": 0,
+                    "registeredMailNum": "",
+                    "reissueFlg": 1
+                },
+                {
+                    "activatedFlg": 1,
+                    "cardExpirationMonth": "",
+                    "cardReceiptDatetime": "",
+                    "firstIssueFlg": 0,
+                    "registeredMailNum": "",
+                    "reissueFlg": 1
+                },
+                {
+                    "activatedFlg": 1,
+                    "cardExpirationMonth": "",
+                    "cardReceiptDatetime": "",
+                    "firstIssueFlg": 0,
+                    "registeredMailNum": "",
+                    "reissueFlg": 1
+                }
+            ],
+            "tisContractNo": "0000110574",
+            "userID": "907fad43-ac82-435f-8360-911c2daf691f"
+        }
+    ],
+    "directDebitAppliedFlag": true,
+    "noticeSettingInfo": {
+        "clubNoticeValue": "1",
+        "enableNoticeValue": "1",
+        "generalNoticeValue": "1",
+        "paymentNoticeValue": "1",
+        "repayNoticeValue": "1"
+    },
+    "userInfo": {
+        "accountType": "2",
+        "birthday": 19890331,
+        "cicScreeningResult": "1",
+        "creditLimit": "30000",
+        "creditLimitInt": 30000,
+        "emailAddressList": [
+            {
+                "accountType": "2",
+                "email": "hiepzen8labs@gmail.com",
+                "loginFlag": "0",
+                "serialNum": 1
+            }
+        ],
+        "kanaName": "ウィーク",
+        "kanaSurname": "ハナ",
+        "loginCode": "1",
+        "municipal": "千代田区",
+        "name": "番号花子",
+        "phoneNumber": "09038368580",
+        "postalCode": "1000005",
+        "prefecture": "東京都",
+        "romajiName": "KATAKANA",
+        "romajiSurname": "HANA",
+        "sendingMunicipality": "千代田区",
+        "sendingPostalCode": "1000005",
+        "sendingPrefectures": "東京都",
+        "sendingStreetAddress": "丸の内（次のビルを除く）",
+        "statusHistoryList": [
+            {
+                "updateDatetime": "2022-10-12 11:58:35",
+                "updatedUsageStatus": "0"
+            },
+            {
+                "updateDatetime": "2022-10-13 16:12:17",
+                "updatedUsageStatus": "1"
+            },
+            {
+                "updateDatetime": "2022-10-13 16:31:31",
+                "updatedUsageStatus": "2"
+            },
+            {
+                "updateDatetime": "2022-10-13 16:34:08",
+                "updatedUsageStatus": "3"
+            },
+            {
+                "updateDatetime": "2023-08-25 19:00:28",
+                "updatedUsageStatus": "4"
+            },
+            {
+                "updateDatetime": "2023-08-25 23:43:25",
+                "updatedUsageStatus": "3"
+            },
+            {
+                "updateDatetime": "2023-08-30 15:00:24",
+                "updatedUsageStatus": "4"
+            },
+            {
+                "updateDatetime": "2023-09-05 14:23:55",
+                "updatedUsageStatus": "3"
+            },
+            {
+                "updateDatetime": "2023-10-03 20:15:26",
+                "updatedUsageStatus": "4"
+            },
+            {
+                "updateDatetime": "2023-10-04 18:10:25",
+                "updatedUsageStatus": "3"
+            },
+            {
+                "updateDatetime": "2023-10-10 12:15:28",
+                "updatedUsageStatus": "4"
+            },
+            {
+                "updateDatetime": "2023-10-19 16:21:52",
+                "updatedUsageStatus": "3"
+            }
+        ],
+        "streetAddress": "丸の内（次のビルを除く）",
+        "surname": "はい",
+        "usageStatus": "3",
+        "userID": "907fad43-ac82-435f-8360-911c2daf691f",
+        "userType": "1"
+    }
+}

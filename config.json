@@ -1,7 +1,8 @@
 [
   {
+    "status_code": 200,
     "method": "GET",
-    "url": "https://api.example",
-    "local_file": "example.json"
+    "url": "https://api.dev.nudge-platform.com/v1/notification/user_informations",
+    "local_file": "notification.json"
   }
 ]

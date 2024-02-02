@@ -11,12 +11,14 @@ from urllib.parse import parse_qs
 from mitmproxy.addonmanager import Loader
 from mitmproxy.log import ALERT
 logger = logging.getLogger(__name__)
+import time
 
 class MapLocalConfig:
-    def __init__(self, url, method, mapLocalFile):
+    def __init__(self, url, method, mapLocalFile, status_code = 200):
         self.url = url
         self.method = method
         self.mapLocalFile = mapLocalFile
+        self.status_code = status_code
 
 class QuanMapLocal:
     def __init__(self):
@@ -29,8 +31,9 @@ class QuanMapLocal:
                 fp= open("local-files/{0}".format(config.mapLocalFile), "r")
                 data = fp.read()
                 fp.close()
+                time.sleep(1)
                 flow.response = http.Response.make(
-                    200,  # (optional) status code
+                    config.status_code,  # (optional) status code
                     data,  # (optional) content
                     {"Content-Type": "application/json"},  # (optional) headers
                     )
@@ -40,7 +43,7 @@ class QuanMapLocal:
         data = json.load(fp)
         mapLocalConfigs = []
         for config in data:
-            mapLocalConfig = MapLocalConfig(config["url"], config["method"], config["local_file"])
+            mapLocalConfig = MapLocalConfig(config["url"], config["method"], config["local_file"], config["status_code"])
             mapLocalConfigs.append(mapLocalConfig)
         fp.close()
 
